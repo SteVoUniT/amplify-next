@@ -37,7 +37,7 @@ export default function App() {
 
   return (
     <main>
-      <h1>My todos</h1>
+      <h1>Image Bucket - Uploader</h1>
       <ul>
         {todos.map((todo) => (
           <li key={todo.id} onClick={() => deleteTodo(todo.id)}>
@@ -70,7 +70,7 @@ export default function App() {
           FilePicker({ onClick }) {
             return (
               <Button variation="primary" onClick={onClick}>
-                Add Todo and Choose File For Upload
+                Add a Description and Choose Image For Upload - JPEG or PNG -
               </Button>
             );
           },
